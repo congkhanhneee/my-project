@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Xe điện Kazuki</title>
+		<link rel="shortcut icon" type="images/icon" href="image/logocar.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <!-- javascript -->
+		<script type="text/javascript" src="script.js"></script>
+		<!-- custom css and js file link  -->
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="main">
+					<div class="navbar">
+						<a href="trangchu.html">
+							<img src="image/logocar.png" class="logo" id="logo">
+							<!--<diV id="logo">E-MOTORCYCLE</div>-->
+						</a>
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="trangchu.html">Trang chủ</a></li><!--- .local đề biết vị trí đang ở đâu trong web-->
+							<li class="dropdown">
+								<a href="sanpham.html" class="dopbtn" class="local">Sản phẩm</a>
+								<div class="dropdown-content">
+									<a href="vinfast.html">VinFast</a>
+									<a href="dk.html">DK Byke</a>
+									<a href="vespa.html">Vepspa</a>
+									<a href="kazuki.html">Kazuki</a>
+								</div>
+							</li>		
+							<li><a href="tintuc.html">Tin tức</a></li>
+							<li><a href="gioithieu.html">Giới thiệu</a></li>
+							<li><a href="dangnhap.html">Đăng nhập</a></li>
+							<li><a href="dangki.html">Đăng kí</a></li>
+							<li><a href="lienhe.html">Liên hệ</a></li>
+							<li><a href="giohang.html"><i class="fa fa-cart-arrow-down" style="font-size:26px" ></i></a></li>
+							<li><div class="search-box">
+								<input onkeypress="checkSearch(event)" type="search" class="search-txt" placeholder="Bạn cần tìm gì">
+								<button onclick="this.parentElement.search()" type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav> 
+		</header>
+		<main class="one-col">
+			<article class="artical-home">
+				<h1><b>Tất cả sản phẩm<b></h1>
+				<div class="product">
+					<div class="item9 item">
+						<img src="image/trangchu/sp9.1.jpg" id="option-color9" class="pro-image" style="width: 65%">
+						<h3><a href="#">Xe máy điện Kazuki Canely-S</a></h3>
+						<div class="option-color-item">
+							<button class="greenwhite1" onclick="document.getElementById('option-color9').src='image/trangchu/sp9.4.jpg'"></button>
+							<button class="black1" onclick="document.getElementById('option-color9').src='image/trangchu/sp9.2.jpg'"></button>
+							<button class="red1" onclick="document.getElementById('option-color9').src='image/trangchu/sp9.3.jpg'"></button>
+							<button class="white1" onclick="document.getElementById('option-color9').src='image/trangchu/sp9.1.jpg'"></button>
+						</div>
+						<p class="price">Giá bán: 16.990.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="ka-sp09" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('ka-sp09')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>
+					
+					<div class="item10 item">
+						<img src="image/trangchu/sp10.1.jpg" id="option-color10" class="pro-image">
+						<h3><a href="#">Xe máy điện Kazuki Canely Virgo</a></h3>
+						<div class="option-color-item">
+							<button class="greenwhite1" onclick="document.getElementById('option-color10').src='image/trangchu/sp10.1.jpg'"></button>
+						</div>
+						<p class="price">Giá bán: 18.990.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="ka-sp10" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('ka-sp10')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>
+
+					<div class="item13 item">
+						<img src="image/trangchu/sp13.1.jpg" id="option-color13" class="pro-image">
+						<h3><a href="#">Xe máy điện Kazuki Xmen Z2</a></h3>
+						<div class="option-color-item">
+							<button class="black1" onclick="document.getElementById('option-color13').src='image/trangchu/sp13.1.jpg'"></button>
+						</div>
+						<p class="price">Giá bán: 16.500.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="ka-sp13" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('ka-sp13')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>
+					
+					<div class="item14 item">
+						<img src="image/trangchu/sp14.1.jpg" id="option-color14" class="pro-image">
+						<h3><a href="#">Xe máy điện Kazuki Z3</a></h3>
+						<div class="option-color-item">
+							<button class="blue1" onclick="document.getElementById('option-color14').src='image/trangchu/sp14.1.jpg'"></button>
+						</div>
+						<p class="price">Giá bán: 16.540.000 VNĐ</p>
+						<div class="input-control input-sl">
+							<input type="number" name="soluong" id="ka-sp14" min="0" max="10" class="input-field input-quantity" placeholder="Số lượng">
+							<button onclick="addCart('ka-sp14')" class="buy-btn">Mua ngay</button>
+						</div>
+					</div>	
+				</div>
+				
+				
+			</article>
+		</main>
+		
+		<footer>
+			<div class="footer">
+				<img src="image/logocar.png" class="logofooter">
+				<div class="footer1">
+					<p>Liên hệ với chúng tôi</p>
+					<ol>
+						
+						<li>Địa chỉ: Khu II, Đường 3/2, Phường Xuân Khánh, Quận Ninh Kiều, Tp Cần Thơ</li>
+						<li>Điện thoại: 1900 1010</li>
+						<li>Fax: 0113113113</li>
+						<li>Email: cskh@emotor.com.vn</li>
+					</ol>
+				</div>
+				<div class="footer2">
+					<p>Tổng đài miễn phí</p>
+					<ol>
+						<li>Tư vấn: 0901 11 22 11</li>
+						<li>Hỗ trợ: 0901 11 22 22</li>
+						<li>Khiếu nại: 0901 11 22 33</li>
+					</ol>
+				</div>
+				<div class="footer3">
+					<p>Về chúng tôi</p>
+					<ol>
+						<li><a href="#">Chính sách bảo mật</a></li>
+						<li><a href="#">Chính sách mua hàng</a></li>
+						<li><a href="#">Quy định hoạt động</a></li>
+						<li><a href="#">Cơ hội nghề nghiệp</a></li>
+					</ol>
+				</div>
+				<div class="footer4">
+					<p>Kết nối với chúng tôi</p>
+					<a target="_blank" href="http://www.facebook.com">
+						<!--<img src="facebook.svg" id="facebook">-->
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a target="_blank" href="http://www.twitter.com">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a target="_blank" href="http://www.pinterest.com">
+						<i class="fa fa-pinterest-p"></i>
+					</a> 
+					<a target="_blank" href="http://www.youtube.com">
+						<i class="fa fa-youtube-play"></i>
+					</a>
+					<a target="_self" href="#logo">
+						<i class="fa fa-arrow-circle-o-up" style="font-size:50px"></i>
+					</a>
+				</div>
+				
+			</div>
+			<div class="end">
+				<p>&copy 2024 Electronic-Motorcycle Việt Nam</p>
+			</div>
+		</footer>
+	</body>
+</html>
